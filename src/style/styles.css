@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+body{
+    margin: 2rem;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #51BD8B;
+}
+
+#menu>img{
+    width: 50px;
+}
+#menu {
+    text-align: center;
+    background-color: #009459;
+    width: 55px;
+    border-radius: 0.7rem;
+    padding: 5px;
+}
+
+#titulo{
+    text-align: center;
+}
+#titulo > h1 {
+    font-family: Kodchasan;
+    font-size: 3rem;
+    color: #FDFDFD;
+    margin: 0;
+}
+
+#linha{
+    width: 300px;
+    height: 1px;
+    background-color: #FDFDFD;
+    margin: 0;
+    margin-left: 48.5rem;
+
+}
+
+#maintarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+#digitar_Tarefa {
+    border: none;
+    border-bottom: 2px solid rgb(1, 117, 70); /* Linha inferior */
+    background-color: transparent;
+    outline: none; /* Remove a borda ao clicar */
+    padding: 5px;
+    font-size: 16px;
+    width: 500px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: rgb(213, 213, 213);
+}
+
+#digitar_Tarefa:focus {
+    border-bottom: 2px solid #00748E; /* Altera a cor da linha ao focar */
+}
+
+#btnAdicionar {
+    border: none;
+    background-color: #007050;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 0.9rem;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+
+#tarefas {
+    background-color: #D6FAEB;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px; /* Defini um tamanho adequado */
+}
+
+#titulo_div{
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#titulo_Tarefa {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: Kodchasan;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icone {
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.icone img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos específicos para cada ícone */
+#icone_Salvar { background-color: #009688; }
+#icone_Favoritar { background-color: #4CAF50; }
+#icone_Remover { background-color: #E57373; }
+#icone_Concluido { background-color: #004D40; }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas Interativa</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style/styles.css">
     <script src="src/js/script.js" defer></script>
   </head>
   <body>
@@ -24,11 +24,11 @@
       <section id="Secao_atividade">
         <div id="titulo">
           <h1>lista de tarefas</h1>
-          <span id="linha"></span>
+          <div id="linha"></div>
         </div>
 
         <div id="maintarefas">
-          <input type="text" placeholder="Digite sua Tarefa" />
+          <input id="digitar_Tarefa" type="text" placeholder="Digite sua tarefa" />
 
           <div>
             <button id="btnAdicionar">Adicionar</button>
@@ -36,31 +36,30 @@
         </div>
 
         <!-- TAREFAS: -->
-        <div id="maintarefas">
-            <h1 id="titulo_Tarefa"></h1>
-
-            <div id="pt1_icones">
-
-                <span id="icone_Salvar">
-                    <img src="src/img/salvar.png" alt="icone_Salvar">
-                </span>
-                <span id="icone_Favoritar">
-                    <img src="src/img/favoritar.png" alt="icone_Favoritar">
-                </span>
-
+        <div id="tarefas">
+            <div id="titulo_div">
+                <h1 id="titulo_Tarefa">Título</h1>  
             </div>
-
-            <div id="pt2_icones">
-
-                <span id="icone_Remover">
-                    <img src="src/img/remover.png" alt="icone_Remover">
+    
+            <div class="icones">
+                <span class="icone" id="icone_Salvar">
+                    <img src="src/img/salvar.png" alt="Salvar">
                 </span>
-                <span id="icone_Concluido">
-                    <img src="src/img/concluido.png" alt="icone_Concluido">
+                <span class="icone" id="icone_Favoritar">
+                    <img src="src/img/favoritar.png" alt="Favoritar">
                 </span>
-
+            </div>
+    
+            <div class="icones">
+                <span class="icone" id="icone_Remover">
+                    <img src="src/img/remover.png" alt="Remover">
+                </span>
+                <span class="icone" id="icone_Concluido">
+                    <img src="src/img/concluido.png" alt="Concluído">
+                </span>
             </div>
         </div>
+        
       </section>
     </main>
   </body>
