@@ -11,12 +11,12 @@ body{
 }
 
 #menu>img{
-    width: 34px;
-    height: 34px;
+    width: 24px;
+    height: 24px;
 }
 #menu {
     text-align: center;
-    background-color: #00613a;
+    background-color: #004026;
     width: 55px;
     border-radius: 0.7rem;
     padding: 5px;
