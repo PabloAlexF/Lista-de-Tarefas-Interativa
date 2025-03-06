@@ -10,6 +10,7 @@ btn_Menu.addEventListener("click", () => {
         menu.style.left = "-250px";
         contador = 0;
     } else {
-        menu.style.left = "0px";
+        menu.style.left = "2rem";
+        menu.style.position = "fixed"
     }
 });

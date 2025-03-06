@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas Interativa</title>
     <link rel="stylesheet" href="src/style/styles.css">
-    <script src="src/js/script.js" defer></script>
+
     <script src="src/js/configurarMenuBTN.js" defer></script>
+    <script src="src/js/EditarTarefa.js" defer></script>
+    <script src="src/js/AdicionarTarefa.js" defer></script>
+
   </head>
   <body>
 
@@ -42,31 +45,9 @@
         </div>
 
         <!-- TAREFAS: -->
-        <div id="tarefas">
-            <div id="titulo_div">
-                <h1 id="titulo_Tarefa">Título</h1>  
-            </div>
-    
-            <div class="icones">
-                <span class="icone" id="icone_Salvar">
-                    <img src="src/img/editar.png" alt="Salvar">
-                </span>
-                <span class="icone" id="icone_Favoritar">
-                    <img src="src/img/favoritar.png" alt="Favoritar">
-                </span>
-            </div>
-    
-            <div class="icones">
-                <span class="icone" id="icone_Remover">
-                    <img src="src/img/remover.png" alt="Remover">
-                </span>
-                <span class="icone" id="icone_Concluido">
-                    <img src="src/img/concluido.png" alt="Concluído">
-                </span>
-            </div>
-        </div>
-        
-      </section>
+        <section id="section_tarefas">
+                <div class="icones"></div>
+        </section>
     </main>
   </body>
 </html>

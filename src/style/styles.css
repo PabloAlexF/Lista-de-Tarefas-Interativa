@@ -21,6 +21,7 @@ body{
     border-radius: 0.7rem;
     padding: 5px;
     cursor: pointer;
+    position: fixed;
 }
 
 #titulo{
@@ -28,7 +29,7 @@ body{
 }
 #titulo > h1 {
     font-family: Kodchasan;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #FDFDFD;
     margin: 0;
 }
@@ -38,7 +39,7 @@ body{
     height: 1px;
     background-color: #FDFDFD;
     margin: 0;
-    margin-left: 48.5rem;
+    margin-left: 55rem;
 
 }
 
@@ -97,17 +98,23 @@ body{
     width: 250px;
 }
 
-#titulo_div{
+#titulo_div {
     margin: 1rem;
     margin-bottom: 2.5rem;
 }
 
-#titulo_Tarefa {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-family: Kodchasan;
+#input_Tarefa {
+    width: 100%;
+    font-size: 2rem; 
+    font-family: "Kodchasan", sans-serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    padding: 0.5rem;
 }
+
 
 .icones {
     display: flex;
@@ -152,6 +159,8 @@ body{
     border: 3px solid #39b385;
     position: relative;
     left: -225px;
+    position: fixed;
+    top: 6rem;
 }
 
 .botao {
