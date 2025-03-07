@@ -2,6 +2,7 @@ const btn_add = document.querySelector("#btnAdicionar");
 const input_Tarefa = document.querySelector("#digitar_Tarefa");
 const tarefas = document.querySelector("#section_tarefas");
 
+const data = new Date()
 
 btn_add.addEventListener("click", () => {
   if (input_Tarefa.value.trim() === "") {
@@ -102,6 +103,10 @@ btn_add.addEventListener("click", () => {
     imgRemover.alt = "Ícone de salvar";
     imgRemover.style.width = "60%";
     imgRemover.style.height = "60%";
+
+    iconeRemover.addEventListener("click", () => {
+      tarefas.removeChild(div_tarefas)
+    })
 
     let iconeConcluir = document.createElement("span");
     iconeConcluir.style.width = "40px";
