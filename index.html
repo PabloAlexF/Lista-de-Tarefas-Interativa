@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas Interativa</title>
     <link rel="stylesheet" href="src/style/styles.css">
+    <link rel="stylesheet" href="src/style/styleConcluido.css">
 
     <script src="src/js/configurarMenuBTN.js" defer></script>
     <script src="src/js/EditarTarefa.js" defer></script>
@@ -26,21 +27,21 @@
         <button class="botao">Todas</button>
         <button class="botao">Pendentes</button>
     </div>
+    </header>
 
     <div id="favoritos"></div>
-    <div id="Concluidas">
-      <h1 id="tituloConcluido"></h1>
-      <div>
-        <p id="dataDaAtividade"></p>
-        <button>
-          <!-- esse botao vai retirar a atividade de concluidas -->
-          <img src="src/img/remover.png" alt=""> 
-        </button>
+
+    <section id="sec_conc">
+      <div id="concluidas">
+        
       </div>
-    </div>
+    </section>
+    
+    
+    
+
     <div id="Todas"></div>
     <div id="Pendentes"></div>
-    </header>
 
     <!-- MAIN: -->
     <main>
