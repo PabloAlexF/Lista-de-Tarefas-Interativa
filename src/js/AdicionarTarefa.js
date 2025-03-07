@@ -2,22 +2,11 @@ const btn_add = document.querySelector("#btnAdicionar");
 const input_Tarefa = document.querySelector("#digitar_Tarefa");
 const tarefas = document.querySelector("#section_tarefas");
 
-let Tarefas = []
 
 btn_add.addEventListener("click", () => {
   if (input_Tarefa.value.trim() === "") {
     alert("A tarefa não pode estar vazia!");
   } else {
-
-    const date = new Date();
-    let Tarefa = {
-      ID: date, 
-      Titlo: titulo_tarefa.value,
-      Concluida: False,
-      Favoritada: False
-    }
-
-    Tarefas.push(Tarefa);
 
     let div_tarefas = document.createElement("div");
     div_tarefas.style.backgroundColor = "#D6FAEB";
@@ -36,6 +25,7 @@ btn_add.addEventListener("click", () => {
     titulodiv.style.marginBottom = "1rem";
 
     let titulo_tarefa = document.createElement("input");
+    titulo_tarefa.disabled = true;
     titulo_tarefa.type = "text";
     titulo_tarefa.value = input_Tarefa.value;
     titulo_tarefa.style.width = "auto";
@@ -47,6 +37,7 @@ btn_add.addEventListener("click", () => {
     titulo_tarefa.style.background = "transparent";
     titulo_tarefa.style.textAlign = "center";
     titulo_tarefa.style.padding = "0.5rem";
+    titulo_tarefa.style.borderBottom = "2px solid #004026";
 
     let icones = document.createElement("div");
     icones.style.display = "flex";
@@ -70,6 +61,13 @@ btn_add.addEventListener("click", () => {
     imgSalvar.alt = "Ícone de salvar";
     imgSalvar.style.width = "60%";
     imgSalvar.style.height = "60%";
+
+    iconeEditar.addEventListener("click", () => {
+      titulo_tarefa.disabled = false;
+      titulo_tarefa.style.transition = "1s";
+      titulo_tarefa.style.borderBottom = "2px solid gray";
+    })
+
 
     let iconeFavoritar = document.createElement("span");
     iconeFavoritar.style.width = "40px";
