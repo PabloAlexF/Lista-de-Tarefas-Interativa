@@ -2,10 +2,23 @@ const btn_add = document.querySelector("#btnAdicionar");
 const input_Tarefa = document.querySelector("#digitar_Tarefa");
 const tarefas = document.querySelector("#section_tarefas");
 
+let Tarefas = []
+
 btn_add.addEventListener("click", () => {
   if (input_Tarefa.value.trim() === "") {
     alert("A tarefa não pode estar vazia!");
   } else {
+
+    const date = new Date();
+    let Tarefa = {
+      ID: date, 
+      Titlo: titulo_tarefa.value,
+      Concluida: False,
+      Favoritada: False
+    }
+
+    Tarefas.push(Tarefa);
+
     let div_tarefas = document.createElement("div");
     div_tarefas.style.backgroundColor = "#D6FAEB";
     div_tarefas.style.padding = "15px";
