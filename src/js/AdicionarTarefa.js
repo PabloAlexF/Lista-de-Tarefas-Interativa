@@ -17,7 +17,6 @@ btn_add.addEventListener("click", () => {
     div_tarefas.style.textAlign = "center";
     div_tarefas.style.display = "inline-block";
     div_tarefas.style.whiteSpace = "normal";
-    div_tarefas.style.wordWrap = "break-word";
     div_tarefas.style.maxWidth = "100%";
     div_tarefas.style.minWidth = "100px";
     div_tarefas.style.margin = "10px";
@@ -124,6 +123,16 @@ btn_add.addEventListener("click", () => {
     imgConcluir.alt = "Ícone de salvar";
     imgConcluir.style.width = "60%";
     imgConcluir.style.height = "60%";
+
+    iconeConcluir.addEventListener("click", () => {
+      let dataAtual = new Date()
+      let AtividadeConcluida = [
+        { Id: dataAtual,
+          titulo_tarefa: titulo_tarefa.value,
+          concluido: true
+        }
+      ]
+    });
 
     titulodiv.appendChild(titulo_tarefa);
     div_tarefas.appendChild(titulodiv);
